@@ -5,7 +5,7 @@ using PropertiesHub.Server.Profiles;
 
 namespace PropertiesHub.Server.Extensions
 {
-    public static class ApplicationBuilderExtensions
+    public static class WebApplicationBuilderExtensions
     {
         public static WebApplicationBuilder RegisterServices(this WebApplicationBuilder builder)
         {
