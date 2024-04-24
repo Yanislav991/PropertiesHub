@@ -13,12 +13,12 @@ namespace PropertiesHub.Server.Controllers
         {
             this._propertyService = propertyService;
         }
-
+        [HttpGet]
         public async Task<ActionResult<List<PropertyDTO>>> GetProperties()
         {
             try
             {
-                return await this._propertyService.GetProperties();
+                return Ok(await this._propertyService.GetProperties());
             }
             catch (Exception ex)
             {
@@ -26,7 +26,7 @@ namespace PropertiesHub.Server.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpGet("{id}")]
         public async Task<ActionResult<PropertyDTO>> GetProperty(int id)
         {
             try
@@ -40,7 +40,7 @@ namespace PropertiesHub.Server.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpPost]
         public async Task<ActionResult<PropertyDTO>> CreateProperty(PropertyDTO propertyData)
         {
             try
@@ -54,7 +54,7 @@ namespace PropertiesHub.Server.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpPut]
         public async Task<ActionResult<PropertyDTO>> EditProperty(PropertyDTO propertyData)
         {
             try
@@ -68,7 +68,7 @@ namespace PropertiesHub.Server.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpDelete]
         public async Task<ActionResult<bool>> DeleteProperty(int id)
         {
             try

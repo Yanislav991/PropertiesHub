@@ -10,6 +10,5 @@ namespace PropertiesHub.Server.Data.Models
         public double? Price { get; set; }
         [MaxLength(250)]
         public string Description { get; set; }
-        public IEnumerable<string> PhotosURLs { get; set; }
     }
 }

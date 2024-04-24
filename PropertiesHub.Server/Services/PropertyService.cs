@@ -23,7 +23,8 @@ namespace PropertiesHub.Server.Services
         }
         public async Task<List<PropertyDTO>> GetProperties()
         {
-            return _mapper.Map<List<PropertyDTO>>(await _data.Properties.ToListAsync());
+            var properties = await _data.Properties.ToListAsync();
+            return _mapper.Map<List<PropertyDTO>>(properties);
         }
         public async Task<PropertyDTO> CreateAsync(PropertyDTO property)
         {

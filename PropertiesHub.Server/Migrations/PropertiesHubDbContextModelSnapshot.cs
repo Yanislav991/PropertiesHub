@@ -35,10 +35,6 @@ namespace PropertiesHub.Server.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("PhotosURLs")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<double?>("Price")
                         .HasColumnType("float");
 

@@ -12,7 +12,7 @@ using PropertiesHub.Server.Data;
 namespace PropertiesHub.Server.Migrations
 {
     [DbContext(typeof(PropertiesHubDbContext))]
-    [Migration("20240422210606_InitialCreate")]
+    [Migration("20240424192845_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -37,10 +37,6 @@ namespace PropertiesHub.Server.Migrations
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("PhotosURLs")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double?>("Price")
                         .HasColumnType("float");
