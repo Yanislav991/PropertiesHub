@@ -396,3 +396,39 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/properties-hub/node_modules
+/properties-hub/.pnp
+/properties-hub/.pnp.js
+/properties-hub..yarn/install-state.gz
+
+# testing
+/properties-hub/coverage
+
+# next.js
+/properties-hub/.next/
+/properties-hub/out/
+
+# production
+/properties-hub/build
+
+# misc
+/properties-hub/.DS_Store
+/properties-hub/*.pem
+
+# debug
+/properties-hub/npm-debug.log*
+/properties-hub/yarn-debug.log*
+/properties-hub/yarn-error.log*
+
+# local env files
+/properties-hub/.env*.local
+
+# vercel
+/properties-hub/.vercel
+
+# typescript
+/properties-hub/*.tsbuildinfo
+/properties-hub/next-env.d.ts
