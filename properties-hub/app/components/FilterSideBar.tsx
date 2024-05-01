@@ -3,7 +3,7 @@ import React from 'react'
 const FilterSideBar = () => {
     return (
         <>
-            <aside className="p-4 dark:bg-gray-800 w-2/12 h-auto">
+            <aside className="p-4 dark:bg-gray-900 w-2/12 h-auto rounded-md">
                 <section className="dark:text-white light:text-gray-800">
                     <form className="max-w-sm mx-auto gap-6 flex flex-wrap">
                         <div className="mb-5 w-full">

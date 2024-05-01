@@ -8,7 +8,6 @@ export default function Home() {
     <main>
         <SearchBar />
         <MainJumbotron />
-        <Footer />
     </main>
   );
 }
